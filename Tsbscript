@@ -1,0 +1,292 @@
+local ArrayField = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AArrayfield%20Library"))()
+--Documentation url: https://docs.sirius.menu/community/arrayfield
+
+local Window = ArrayField:CreateWindow({
+        Name = "Frost’s Strongest Battle Grounds Hub💭",
+        LoadingTitle = "Frost’s Hub 💭",
+        LoadingSubtitle = "by FrostYT",
+        ConfigurationSaving = {
+            Enabled = true,
+            FolderName = nil, -- Create a custom folder for your hub/game
+            FileName = "ArrayField"
+        },
+        Discord = {
+            Enabled = true,
+            Invite = "PcF3FWTGC9", -- The Discord invite code, do not include discord.gg/
+            RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+        KeySystem = true, -- Set this to true to use our key system
+        KeySettings = {
+            Title = "Frost’s Hub 💭",
+            Subtitle = "Key System",
+            Note = "Join the discord For Key (https://discord.gg/PcF3FWTGC9)",
+            FileName = "Frost’s Hub key 🔑 ",
+            SaveKey = True,
+            GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+            Key = {"Key972",'Key972'},
+            Actions = {
+                [1] = {
+                    Text = 'nil',
+                    OnPress = function()
+                    end,
+                }
+            },
+        }
+    })
+    local MainTab = Window:CreateTab("Tab Example", nil) -- Title, Image
+    local MainTab2 = Window:CreateTab("Main 📝") -- Title, Image
+    local MainSection = MainTab:CreateSection("Scripts 🫶",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+    MainTab:CreateSpacing(nil,10)
+    local Button = MainTab:CreateButton({
+        Name = "Fe animations Gui👀",
+        Info = {
+            Title = 'Animations 😭',
+            Description = 'This gives u all of the animations 🫣',
+        },
+        Interact = 'Changable',
+        Callback = function()
+-- keep use this actual link to gets for updates (i promise i won't delete this script no matter what)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Mautiku/ehh/main/strong%20guest.lua.txt'))()
+            print('Pressed')
+        end,
+    })
+    MainTab:CreateSpacing(nil,10)
+local Button = MainTab:CreateButton({
+        Name = "Fe Easy Combo’s 👀",
+        Info = {
+            Title = 'Easy Combo 😭',
+            Description = 'This makes u combo automatically 🫣',
+        },
+        Interact = 'Changable',
+        Callback = function()
+wait(2)
+
+local plr = game.Players.LocalPlayer
+local chr = plr.Character
+local hum = chr.Humanoid
+
+
+
+
+local gui = Instance.new("ScreenGui", plr.PlayerGui)
+local button = Instance.new("TextButton", gui)
+button.Position = UDim2.new(0, 0,0.61, 0)
+button.Size = UDim2.new(0, 61,0, 55)
+button.Text = "<"
+button.TextScaled = true
+
+local movesFrame = Instance.new("Frame", gui)
+movesFrame.Position = UDim2.new(0.063, 0,0.434, 0)
+movesFrame.Size = UDim2.new(0, 181,0, 246)
+
+
+
+local frame = Instance.new("Frame", gui)
+frame.Position = UDim2.new(0.063, 0,0.434, 0)
+frame.Size = UDim2.new(0, 181,0, 246)
+
+local button = Instance.new("TextButton", frame)
+button.Position = UDim2.new(0,0,0,0)
+button.Size = UDim2.new(0,181,0,50)
+button.Text = "Saitama"
+
+local button2 = Instance.new("TextButton", frame)
+button2.Position = UDim2.new(0,1,0.200,0)
+button2.Size = UDim2.new(0,181,0,50)
+button2.Text = "Garou"
+
+
+
+
+button.MouseButton1Click:Connect(function()
+
+local tool = plr.Backpack["Consecutive Punches"]
+tool.Parent = chr
+
+wait(1.6)
+tool.Parent = plr.Backpack
+local tool2 = plr.Backpack.Shove
+tool2.Parent = chr
+wait(1)
+tool2.Parent = plr.Backpack
+
+local args = {
+    [1] = {
+        ["Dash"] = Enum.KeyCode.W,
+        ["Key"] = Enum.KeyCode.Q,
+        ["Goal"] = "KeyPress"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+
+end)
+
+button2.MouseButton1Click:Connect(function()
+local tool = plr.Backpack["Lethal Whirlwind Stream"]
+tool.Parent = chr
+wait(2.5)
+tool.Parent = plr.Backpack
+local tool2 = plr.Backpack["Flowing Water"]
+tool2.Parent = chr
+wait(2)
+tool2.Parent = plr.Backpack
+wait(3)
+local args = {
+    [1] = {
+        ["Dash"] = Enum.KeyCode.W,
+        ["Key"] = Enum.KeyCode.Q,
+        ["Goal"] = "KeyPress"
+    }
+}
+end)
+            print('Pressed')
+        end,
+    })
+MainTab:CreateSpacing(nil,10)
+local Button = MainTab:CreateButton({
+        Name = "Invisibility Power 👀",
+        Info = {
+            Title = 'Stoic Bomb Kj 😭',
+            Description = 'This gives u stoic bomb kj 🫣',
+        },
+        Interact = 'Changable',
+        Callback = function()
+-- Create the Tool instance
+local tool = Instance.new("Tool")
+
+-- Set the tool's properties
+tool.Name = "Stoic Bomb"
+tool.RequiresHandle = false  -- Set to true if you have a handle part
+tool.CanBeDropped = true     -- Change as needed
+
+-- Add a description or other properties
+tool.ToolTip = "henzen bakadom"
+
+-- Function to make stuff happen when activated
+local function activateTool()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local Sound = Instance.new("Sound")
+Sound.Parent = game:GetService("Players").LocalPlayer.Character.Torso
+Sound.SoundId = getcustomasset('Stoic.MP3')
+Sound.Looped = false
+Sound.Volume = 5
+Sound:Play()
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://17141153099"
+
+local playAnim = humanoid:LoadAnimation(anim)
+anim.AnimationId = "rbxassetid://0"
+playAnim:Play()
+playAnim:AdjustSpeed(0.3)
+wait(0.3)
+playAnim:AdjustSpeed(1)
+local launch1 = game.ReplicatedStorage.Resources.KJEffects["launchup"].launchything:Clone()
+launch1.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(launch1:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(3) -- Emit 20 particles
+        end
+    end
+wait(0.1)
+local light1 = game.ReplicatedStorage.Resources.StoicBomb["stoicbombspeedlines"].POINTOLIGHTO:Clone()
+light1.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(light1:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(1) -- Emit 20 particles
+        end
+    end
+wait(1.4)
+local boom1 = game.ReplicatedStorage.Resources.KJEffects["stoic bomb boom entrance"].Attachment:Clone()
+boom1.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(boom1:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(3) -- Emit 20 particles
+        end
+    end
+wait(1.6)
+local stoic1 = game.ReplicatedStorage.Resources.StoicBomb["pre"].Part.Attachment:Clone()
+stoic1.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(stoic1:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(1) -- Emit 20 particles
+        end
+        end
+wait(0.1)
+local stoic2 = game.ReplicatedStorage.Resources.StoicBomb["Main"].Part.Attachment:Clone()
+stoic2.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(stoic2:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(1) -- Emit 20 particles
+        end
+        end
+wait(0.1)
+light1:Destroy()
+stoic1:Destroy()
+stoic2:Destroy()
+local boom2 = game.ReplicatedStorage.Resources.KJEffects["stoic bomb boom entrance"].THEACTUALBOOM:Clone()
+boom2.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(boom2:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(5) -- Emit 20 particles
+        end
+    end
+local boom3 = game.ReplicatedStorage.Resources.KJEffects["stoic bomb boom entrance"].smok:Clone()
+boom3.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(boom3:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(5) -- Emit 20 particles
+        end
+    end
+local boom4 = game.ReplicatedStorage.Resources.KJEffects["stoicbombspeedlines"].Attachment:Clone()
+boom4.Parent = game.Players.LocalPlayer.Character["Torso"]
+    for _, child in ipairs(boom4:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+            child:Emit(1) -- Emit 20 particles
+        end
+    end
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end
+-- Add functionality to the tool when activated
+tool.Equipped:Connect(function()
+    activateTool()
+end)
+
+-- Add the tool to the player's backpack
+tool.Parent = game.Players.LocalPlayer.Backpack
+            print('Pressed')
+        end,
+    })
+MainTab:CreateSpacing(nil,10)
+local Button = MainTab:CreateButton({
+        Name = "Tsb Camlock👀",
+        Info = {
+            Title = 'Tsb Camlock 😭',
+            Description = 'This makes u lock onto other players 🫣',
+        },
+        Interact = 'Changable',
+        Callback = function()
+loadstring(game:HttpGet("https://pastefy.app/cfMW31sf/raw"))()
+        end,
+    })
+
+MainTab:CreateSpacing(nil,10)
+local Button = MainTab:CreateButton({
+        Name = "Fe random Menu👀",
+        Info = {
+            Title = 'Random Menu 😭',
+            Description = 'This Gives u a random menu 🫣',
+        },
+        Interact = 'Changable',
+        Callback = function()
+loadstring(game:HttpGet("https://pastefy.app/ayWSdgWE/raw"))()
+        end,
+    })
